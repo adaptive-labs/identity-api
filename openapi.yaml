@@ -1,0 +1,22 @@
+openapi: 3.0.3
+info:
+  title: Identity API API
+  version: 1.0.0
+  description: Customer and staff identity, login, and account management.
+servers:
+  - url: https://api.adaptive-labs.example/identity-api
+paths:
+  /health:
+    get:
+      summary: Health check
+      responses:
+        '200': { description: OK }
+  /identity-api:
+    get:
+      summary: List identity api resources
+      responses:
+        '200': { description: A list of resources }
+    post:
+      summary: Create a identity resource
+      responses:
+        '201': { description: Created }

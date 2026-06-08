@@ -1,0 +1,24 @@
+schemaVersion: 1
+service:
+  id: identity-api
+  name: Identity API
+  type: api
+  tier: critical
+  description: Customer and staff identity, login, and account management.
+lifecycle: production
+tags:
+- adaptive-labs
+- identity-access
+owner:
+- type: team
+  id: identity-access
+interfaces:
+  http:
+    baseUrl: https://api.adaptive-labs.example/identity-api
+    openapi: ./openapi.yaml
+    version: 1.0.0
+links:
+- name: Runbook
+  url: ./docs/runbook.md
+- name: Onboarding
+  url: ./docs/onboarding.md
