@@ -17,6 +17,11 @@ interfaces:
     baseUrl: https://api.adaptive-labs.example/identity-api
     openapi: ./openapi.yaml
     version: 1.0.0
+relations:
+- type: depends_on
+  target: service:sso-bridge
+- type: depends_on
+  target: service:user-profile
 links:
 - name: Runbook
   url: ./docs/runbook.md

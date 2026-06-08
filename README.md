@@ -16,4 +16,6 @@ Customer and staff identity, login, and account management.
 
 ## Dependencies
 
-No upstream service dependencies of note.
+It talks to:
+- `sso-bridge`
+- `user-profile`
